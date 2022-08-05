@@ -25,7 +25,7 @@ def foxtrot(link_sales):
             variable = max(pages_list)
         for i in range(len(name_smartphone)):
             all_data = (name_smartphone[i].getText(), price_smartphone[i].getText(),
-                        f"https://www.foxtrot.com.ua/{link_smartphone[i].get('href')}", 'https://www.foxtrot.com.ua/')
+                        f"https://www.foxtrot.com.ua{link_smartphone[i].get('href')}", 'https://www.foxtrot.com.ua/')
             sheet.append(all_data)
         n += 1
     fontObj1 = Font(name='Times New Roman', bold=True)
